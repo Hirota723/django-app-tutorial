@@ -5,4 +5,4 @@ from .models import Page
 class PageForm(ModelForm):
     class Meta:
         model = Page
-        fields = ["title", "content", "page_date"]
+        fields = ["title", "content", "page_date", "picture"]

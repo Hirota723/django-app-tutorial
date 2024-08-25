@@ -3,5 +3,7 @@
 <h2>{{page.title}}</h2>
 <div>{{page.page_date}}</div>
 <div>{{page.content | linebreaksbr}}</div>
+{% if page.picture %}
+<img src="{{page.picture.url}}" />
 
-{% endblock body %}
+{% endif %} {% endblock body %}
