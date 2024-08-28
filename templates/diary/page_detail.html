@@ -5,5 +5,8 @@
 <div>{{page.content | linebreaksbr}}</div>
 {% if page.picture %}
 <img src="{{page.picture.url}}" />
+{% endif %}
+<br />
+<a href="{% url 'diary:page_update' page.id %}">編集</a>
 
-{% endif %} {% endblock body %}
+{% endblock body %}
